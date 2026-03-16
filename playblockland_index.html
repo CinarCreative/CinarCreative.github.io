@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlayBlockLand</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+}
+header{
+    padding:40px;
+    background:#1e293b;
+}
+h1{
+    margin:0;
+    font-size:40px;
+}
+section{
+    padding:40px;
+}
+.card{
+    background:#1e293b;
+    margin:20px auto;
+    padding:20px;
+    max-width:500px;
+    border-radius:15px;
+}
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+footer{
+    padding:20px;
+    background:#020617;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>PlayBlockLand</h1>
+<p>Minecraft Sunucu ve Teknoloji Projeleri</p>
+</header>
+
+<section>
+<div class="card">
+<h2>Sunucu Durumu</h2>
+<p>⚡ Sunucu yakında açılıyor</p>
+</div>
+
+<div class="card">
+<h2>Sunucu IP</h2>
+<p id="ip">playblockland.com</p>
+<button onclick="copyIP()">IP Kopyala</button>
+</div>
+
+<div class="card">
+<h2>Topluluk</h2>
+<p>Discord ve duyurular yakında burada olacak.</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 PlayBlockLand</p>
+</footer>
+
+<script>
+function copyIP(){
+    navigator.clipboard.writeText("playblockland.com");
+    alert("IP kopyalandı!");
+}
+</script>
+
+</body>
+</html>
