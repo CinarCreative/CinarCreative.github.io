@@ -1,84 +1,136 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PlayBlockLand</title>
-<style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#0f172a;
-    color:white;
-    text-align:center;
-}
-header{
-    padding:40px;
-    background:#1e293b;
-}
-h1{
-    margin:0;
-    font-size:40px;
-}
-section{
-    padding:40px;
-}
-.card{
-    background:#1e293b;
-    margin:20px auto;
-    padding:20px;
-    max-width:500px;
-    border-radius:15px;
-}
-button{
-    padding:12px 20px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:16px;
-}
-footer{
-    padding:20px;
-    background:#020617;
-}
-</style>
-</head>
+    <meta charset="UTF-8">
+    <title>Çınar Creative</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
 
+        header {
+            background: #020617;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left-text {
+            font-size: 12px;
+            color: #94a3b8;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            border: none;
+            color: black;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #020617;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            color: #94a3b8;
+        }
+    </style>
+</head>
 <body>
 
 <header>
-<h1>PlayBlockLand</h1>
-<p>Minecraft Sunucu ve Teknoloji Projeleri</p>
+    <div class="left-text">Bu Bir Çınaroğlu Kuruluşudur</div>
+    <div class="logo">Çınar Creative</div>
+    <nav>
+        <a href="#">Ana Sayfa</a>
+        <a href="#">Projeler</a>
+        <a href="#">Destek</a>
+        <a href="#">İletişim</a>
+    </nav>
 </header>
 
-<section>
-<div class="card">
-<h2>Sunucu Durumu</h2>
-<p>⚡ Sunucu yakında açılıyor</p>
-</div>
+<section class="hero">
+    <h1>Yazılım & Proje Merkezi</h1>
+    <p>Kodlama, projeler ve teknik destek tek bir yerde</p>
+    <button class="btn">Başla</button>
+</section>
 
-<div class="card">
-<h2>Sunucu IP</h2>
-<p id="ip">playblockland.com</p>
-<button onclick="copyIP()">IP Kopyala</button>
-</div>
-
-<div class="card">
-<h2>Topluluk</h2>
-<p>Discord ve duyurular yakında burada olacak.</p>
-</div>
+<section class="section">
+    <h2>Hizmetlerimiz</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Kodlama</h3>
+            <p>Web, Arduino ve özel yazılım projeleri</p>
+        </div>
+        <div class="card">
+            <h3>Projeler</h3>
+            <p>Hazır ve özel geliştirilmiş projeler</p>
+        </div>
+        <div class="card">
+            <h3>Destek</h3>
+            <p>Teknik yardım ve çözüm hizmetleri</p>
+        </div>
+    </div>
 </section>
 
 <footer>
-<p>© 2026 PlayBlockLand</p>
+    © 2026 Çınar Creative - Tüm Hakları Saklıdır
 </footer>
-
-<script>
-function copyIP(){
-    navigator.clipboard.writeText("playblockland.com");
-    alert("IP kopyalandı!");
-}
-</script>
 
 </body>
 </html>
