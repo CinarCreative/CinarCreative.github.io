@@ -1,0 +1,3 @@
+function mesaj() {
+    alert("Hoşgeldin! 🚀");
+}
